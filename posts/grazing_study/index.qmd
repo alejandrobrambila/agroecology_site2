@@ -1,0 +1,253 @@
+---
+title: "Bobolink Grazing Study"
+author: "Alejandro Brambila"
+date: "2026-02-20"
+html:
+  fig-width: "100%"
+categories: [news, projects, data]
+image: "image.jpg"
+---
+
+```{r, include=F}
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(lubridate)
+library(patchwork)
+
+#read in files. remember to get them in a working directory first. notes on what each are in email
+plots<-read_csv("data/plot_key.csv")%>%
+  mutate(cows_in=mdy(cows_in), cows_out=mdy(cows_out))%>%
+  mutate(cows_out_nodate=update(cows_out, year=2000))
+nests<-read_csv("data/nest_summary.csv")%>%
+  mutate(found_date=mdy(found_date),
+         build_date=mdy(build_date),
+         egg_date=mdy(egg_date),
+         hatch_date_key=mdy(hatch_date_key),
+         fledge_date=mdy(fledge_date),
+         mobile_date=mdy(mobile_date))%>%
+  filter(is.na(field), #remove nests not in GP
+         is.na(in_study), #remove nests in GP but not in a plot
+         is.na(confirmed), #remove 'presumed' but not found nests
+         species=="Bobolink") %>%#remove savanna sparrow nests
+  select(-field, -in_study, -confirmed, -species, -22, -23)%>%
+  mutate(fledge_date=hatch_date_key+10)%>%
+  mutate(mobile_date=hatch_date_key+20)%>%
+  mutate(egg_date=hatch_date_key-12)%>%
+  mutate(build_date=hatch_date_key-14)%>%
+  mutate(build_date_noyear=update(build_date, year=2000))%>%
+  mutate(mobile_date_noyear=update(mobile_date, year=2000))
+
+allnests<-left_join(nests, plots) #joins the plot and nest dataframes by common variable (nestid). This copies over plot level data to the nest observations.
+allnests$trt_actual<-factor(allnests$trt_actual, levels=c("pre_arrival", "pre_nesting", "early_nesting", "peak", "post_nesting"))
+allnests$outcome<-factor(allnests$outcome, levels=c(NA, "Never laid eggs", "Abandoned", "At least one young fledged"))
+
+```
+
+This study, carried out in Appleton Farms' 100+ acre Great Pasture in Ipswich, MA, was designed to explore options for grazing management that help alleviate a common production/conservation trade-off.
+
+Bobolinks are a key indicator species for grassland habitat value. They are a grassland nesting bird, a guild which initially benefited from agricultural clearing in the 1800s, but has since been in steep decline due to habitat loss, species invasions, changing climate, and agricultural intensification. Bobolinks nest in grasslands from late May through early July, making them sensitive to disturbance precisely during the optimal harvest window for most common forage species.
+
+(Image of bobolink)
+
+The most common bobolink conservation practice is delaying harvest until sometime between July 15th, when most birds are done nesting and August 15th, when they migrate south. By this point forage quality and economic value has declined substantially, placing a heavy burden on grass farmers. This burden is increased in the case of graziers, where livestock must graze elsewhere for much of the season.
+
+Our study examined the impact of grazing prior to peak nesting activity on both nesting success and quality of summer forage. Our premise was based on research by Dr. Noah Perlut, who found that harvesting through early June, followed by an extended rest period, allowed bobolinks to successfully re-nest in fields. \*Assuming grazing during nesting terminates nests present, focus on what happens after.\* In addition to timing of early season harvest, we also considered the relative influence of forage height, tree and wetland distribution within the study area.
+
+Our primary treatment, harvest timing, was implemented by dividing Appleton's Great Pasture into twenty roughly two-acre plots. Plot locations were selected to maximize the chance of nesting activity based on general background knowledge about where bobolinks tend to nest in fields (away from wooded edges and trees, outside of wetlands) and specific experience with territorial activity in the Great Pasture.
+
+![](base%20GP.jpg)
+
+![](plot_locations.jpg)
+
+Each year from 2023 through 2025, a herd of \~25 cows with their calves was rotated through the pasture according to prescriptions for each plot: pre-arrival (prior to May 15th), pre-nesting (May 15th-23rd), early-nesting (May 24th - June 9th), or post-nesting (after July 15th). Prescriptions were evenly distributed, and varied from year to year.
+
+(Image of GP with prescriptions).
+
+Nests were found by walking near them and flushing females, or observation of females returning to nests. Across three years, we found 47 bobolink nests. Once nests were found, they were visited every three days to assess timing and success rate of each nest by recording the number and status of eggs and young.
+
+(pictures of nests) 1 x 3
+
+![All nests found in plots with poorly drained soils (blue) and tree cover (green) highlighted.](found_nests.jpg)
+
+As can be seen in the map. Nests were unevenly distributed across plots. Distribution across the years. Any plots not included did not have nests found in them.
+
+```{r, echo=F, warning=F}
+# early nesting worked in 15 (oddly) and 19. 
+ggplot(ungroup(allnests), aes(as.factor(plot), fill=interaction(as.factor(year)))) + 
+  geom_bar()+xlab("Plot ID")+ylab("Number of Nests Found") +
+  theme(legend.title = element_blank())
+```
+
+When did nesting periods start and end? Determined hatch date of each nest, and used known lifecycle to estimate nest initiation and fledgling mobile dates.
+
+```{r, echo=F, warning=F}
+#map the distribution of 'build dates': 14 days prior to hatch across all three years
+p1<- ggplot(nests, aes(build_date_noyear))+geom_histogram(bins=15, aes(fill=as.factor(year(nests$build_date))))+
+  geom_vline(xintercept=mdy("05/15/2000"))+xlab("Estimated Nest Initiation (Hatch Date -14)")+ylab("Number of Nests") +theme(legend.position="none")
+
+#map the distribution of 'mobile dates': 20 days after to hatch across all three years
+p2<- ggplot(nests, aes(mobile_date_noyear))+geom_histogram(bins=15, aes(fill=as.factor(year(nests$build_date))))+
+  geom_vline(xintercept=mdy("07/15/2000"))+xlab("Estimated Mobile Young (Hatch Date +20)")+ylab("")+
+  theme(legend.title = element_blank())
+
+p1+p2
+```
+
+These plots show that the timing of our nests fits within the typical nesting period: May 15 - July 15 and that harvesting during this period would have interrupted only the latest nests in 2024.
+
+How many nests by treatment?
+
+```{r, echo=F, warning=F}
+#number of nests (pre, post > pre nest > others)
+ggplot(filter(allnests, !is.na(outcome)), aes(trt_actual))+geom_bar(aes(alpha=outcome))+ylab("Number of Nests")+xlab("Grazing Treatment")
+
+```
+
+Most nests were in fallow plots, followed closely by plots grazed prior to bobolinks arrival on May 15th. Nearly all nests found were ultimately successful in fledging young. Some successful nests were found in plots that were grazed between May 16th and July 15th, although far fewer than outside this period.
+
+While this technically supports the premise that grazing during nest initiation can allow for successful nesting, practically it led to greatly reduced nesting activity. One potential interpretation of these results is that as territory establishment and nest initiation was interrupted in grazed plots, the bobolinks simply moved to nearby undisturbed plots and did not have any need to return and re-nest in the impacted plots. A larger-scale disturbance that did not allow for in-field migration may have resulted in higher re-nesting in impacted areas. Further research into the spatial and temporal dynamics of in-field refuges remains an interesting direction.
+
+This interpretation is supported by data showing the relationship between graze date and nest initiation date.
+
+```{r, echo=F, warning=F}
+# cows by start date . almost all nests were started after cows left (left of the line).
+# one was started before cows left (it survived them going through) - 1wk prior. (show other examples where trampled though)
+# the last two were grazed after the nest was basically done.  
+ggplot(allnests, aes(cows_out_nodate, build_date_noyear,  color=trt_actual)) +
+  geom_point() + geom_abline(intercept = 0, slope = 1, color = "red", linetype = "dashed") +
+  xlab("Graze Date")+ ylab ("Nest Building Date")
+
+
+```
+
+The four nests found in the pre-nesting graze treatment were in fields that were disturbed at the very beginning of this period (May 16th). The nest found in the early-nesting period was the only nest initiated prior to grazing, meaning it survived the grazing event rather than was re-established during the post-grazing period. Finally, the two successful nests in plots that were grazed during the peak nesting period were subjected to grazing only after they had fledged young, in early July, so they can more realistically be considered fallow plots. This data also suggests that
+
+On average, nests fledged about four young. We interpreted young as having fledged if they were consistently observed upon repeat visits to the nest, up to the age (\~10 days) where they would be expected to fledge naturally. There is some chance that young were predated after the last visit where they were seen alive, whether in the nest or after they fledged, but it was beyond our ability to gather that data. While there were only minor differences between nests in plots grazed outside of the active nesting period, the few others fledged only one or two young.
+
+```{r, echo=F, warning=F}
+ggplot((allnests), aes(trt_actual, as.numeric(num_fledged)))+
+ geom_jitter(width=.1)+stat_summary(fun="mean", geom="point", color="darkred", size=3)+
+  xlab("Grazing Period") + ylab("Bobolinks Fledged per Nest")
+```
+
+Nests in fallow plots were built on average 3-4 days before nests in plots grazed earlier in the season. Suggests they may have been waiting for grass to regrow.
+
+```{r, echo=F, warning=F}
+ggplot(filter(allnests, trt_actual!="early_nesting"&trt_actual!="peak"), aes( trt_actual, build_date_noyear))+
+  geom_boxplot(aes())+geom_jitter(width=.1, size=.5)+
+  ylab("Nest Build Date") +xlab("")
+```
+
+```{r, include=F}
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(zoo)
+
+platemeter_all<-read_csv("data/platemeter_all.csv")
+
+#interpolate grass heights in each plot in each date
+cowdates<-select(plots, plot, cows_in, cows_out)%>%
+  pivot_longer(cols=cows_in:cows_out, names_to = "type", values_to = "date")%>%
+  mutate(cover=NA)%>%
+  filter(type!="cows_in")%>%
+  rbind(mutate(platemeter_all, type="platemeter"))%>%
+  arrange(plot, date, type)%>%
+  mutate(year=year(date))%>%
+  group_by(plot, year)%>%
+  filter(!is.na(year))%>%
+  fill(cover, .direction="up")%>%
+ complete(date=seq(min(date, na.rm=T), max(date, na.rm=T), by="day"))%>%
+  mutate(harvest_cycle=ifelse(type=="cows_out", 1, NA))%>%
+  fill(harvest_cycle)%>%
+  mutate(harvest_cycle=ifelse(is.na(harvest_cycle), 0, 1))%>%
+  mutate(type=ifelse(is.na(type), "int", type))%>%
+#  select(-type)%>%
+  unique()%>%
+  group_by(plot, year, harvest_cycle)%>%
+  mutate(int_cover=na.approx(cover, na.rm=F))%>% #use column int_cover
+  mutate(date_noyear=update(date, year=2000))%>%
+  mutate(plot=as.factor(plot))
+
+#pull relevant nest data for build dates
+grass_build<-select(allnests, nest_id, year, plot, outcome, build_date, hatch_date_key, fledge_date, num_eggs, num_fledged, trt_actual)%>%
+  mutate(date=build_date, plot=as.character(plot))%>%
+  left_join(cowdates)
+
+#how much grass in plots on average build date: how many nests in each plot. arrange by descending grass cover. 
+avg_build<-filter(cowdates, date_noyear==ymd("2000/05/26"))%>%
+  mutate(year=year(date))%>%
+  left_join(select(allnests, nest_id, year, plot, num_fledged)%>%mutate(plot=as.character(plot)))%>%
+  mutate(count=ifelse(is.na(nest_id),0,1))%>%
+  group_by(year, plot)%>%
+  mutate(sum=sum(count))%>%
+  left_join(select(mutate(plots, plot=as.factor(plot)), plot, year, trt_actual))
+
+#pull relevant nest data for hatch dates
+grass_hatch<-select(allnests, nest_id, year, plot, outcome, build_date, hatch_date_key, fledge_date, num_eggs, num_fledged, trt_actual)%>%
+  mutate(date=hatch_date_key, plot=as.character(plot))%>%
+  left_join(cowdates)
+
+
+#how much grass in plots on avg. hatch date
+avg_hatch<-filter(cowdates, date_noyear==ymd("2000/06/10"))%>%
+  mutate(year=year(date))%>%
+  left_join(select(allnests, nest_id, year, plot)%>%mutate(plot=as.character(plot)))%>%
+  mutate(count=ifelse(is.na(nest_id),0,1))%>%
+  group_by(year, plot)%>%
+  mutate(sum=sum(count))%>%
+  left_join(select(mutate(plots, plot=as.factor(plot)), plot, year, trt_actual))
+
+```
+
+Next looked at if amount of grass was the mechanism in treatment timing. If thats the case you could use a lower intensity impact early in the season to maintain cover as the time left for regrowth declines.
+
+```{r, echo=F, warning=F, message=F}
+#histogram of how much cover was present when nest was built (~3000)
+p1<-ggplot(grass_build, aes(int_cover)) +geom_histogram(aes()) +
+  geom_vline(xintercept = 3030) + ylab("Number of Nests by Cover at Average Build Date")
+#same as above, but cover when hatched. tight around 3800
+p2<-ggplot(grass_hatch, aes(int_cover)) +geom_histogram(aes())+ 
+    geom_vline(xintercept = 3588)+ ylab("Number of Nests by Cover at Average Hatch Date")
+
+p1+p2
+
+p3<- ggplot(avg_build, aes(int_cover)) +geom_histogram() +geom_vline(xintercept=3030)+ylab("Number of Plots by Cover at Average Build Date")
+p4<-ggplot(avg_hatch, aes(int_cover)) +geom_histogram() +geom_vline(xintercept=3588) +ylab("Number of Plots by Cover at Average Build Date")
+ p3 + p4
+
+```
+
+While there were patterns in the amount of grass present when nests were started, this was not easily explained by either grass height at the average build date (May 26th)...
+
+```{r, echo=F, warning=F}
+
+ggplot(avg_build, aes(fct_reorder(interaction(plot, year), sum, .desc=T),sum))+geom_point(stat="identity", aes(color=trt_actual))+
+  geom_bar(stat="summary", fun="mean", aes(y=int_cover/2000), alpha=.5)+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))+
+  scale_y_continuous(
+        name = "Number of Nests",
+        sec.axis = sec_axis( trans=~.*2000, name="Vegetation Cover (dm/Ac)")
+  ) +xlab("Plot.Year")
+```
+
+...or hatch date (Jun 10th):
+
+```{r, echo=F, warning=F}
+
+ggplot(avg_hatch, aes(fct_reorder(interaction(plot, year), sum, .desc=T),sum))+geom_point(stat="identity", aes(color=trt_actual))+
+  geom_bar(stat="summary", fun="mean", aes(y=int_cover/2000), alpha=.5)+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))+
+  scale_y_continuous(
+    name = "Number of Nests",
+    sec.axis = sec_axis( trans=~.*2000, name="Vegetation Cover (dm/Ac)")
+  ) +xlab("Plot.Year")
+
+```
+
+Fields with most nests had typical cover, not skewed higher than average as one may predict. In fact it looked even tighter than the full distribution. Maybe the lowest end got cut off. But they did not skew to the highest, some moderate impact early on may be beneficial if grass can recover to 'normal' levels. May be especially the case where grass/thatch is very dense or tall.
+
+Grass recovers quickly during this time period, especially under careful rotational grazing. Points towards the disturbance of cattle moving through once birds are present, not worry about moving through 'extra lightly', especially before the birds arrive. Note: heavy, close mowing may be a different story.
+
+That's it for the impact of grazing treatment as measured categorically in time periods and continuously by grazing date (nothing there) and as manifest through grass height. Next up.. incorporating spatial impacts, integrated modeling, and forage quality.

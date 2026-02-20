@@ -1,0 +1,89 @@
+nest_id,year,lat,long,plot,field,in_study,confirmed,species,outcome,found_date,build_date,egg_date,hatch_date_key,fledge_date,mobile_date,num_eggs,num_hatched,num_fledged,hatch_rate,Fledge Rate,,
+LS N1 23,2023,,,,lower_sunset,no,,Bobolink,At least one young fledged,5/30/23,5/27/23,5/29/23,6/10/23,6/20/23,6/30/23,7,5,4,0.714285714,0.8,,
+PlainsE N1 23,2023,,,,plains,no,,Bobolink,Abandoned,6/7/23,,btw 6- 8 and 18,,,,2,0,0,0,0,,
+P14 N2 23,2023,,,14,,,,Bobolink,At least one young fledged,6/15/23,5/28/23,5/30/23,6/11/23,6/21/23,,3,3,3,1,1,,
+P9 N1 23,2023,,,9,,,,Bobolink,At least one young fledged,6/9/23,5/24/23,5/26/23,6/7/23,6/17/23,6/27/23,5,5,4,1,0.8,,
+P7 N1 23,2023,,,7,,,,Bobolink,At least one young fledged,6/14/23,5/23/23,5/25/23,6/6/23,6/16/23,6/26/23,6,6,6,1,1,,
+P9 N2 23,2023,,,9,,,,Bobolink,At least one young fledged,6/14/23,5/26/23,5/28/23,6/9/23,6/19/23,6/29/23,5,5,5,1,1,,
+GP5 N1 23,2023,,,,,no,,Bobolink,At least one young fledged,6/14/23,5/22/23,5/24/23,6/5/23,6/15/23,6/25/23,5,5,4,1,0.8,,
+P13 N3 23,2023,,,13,,,,Bobolink,At least one young fledged,6/14/23,5/22/23,5/24/23,6/5/23,6/15/23,6/25/23,5,5,5,1,1,,
+P13 N2 23,2023,,,13,,,,Bobolink,At least one young fledged,6/14/23,5/22/23,5/24/23,6/5/23,6/15/23,6/25/23,4,4,4,1,1,,
+P17 N1 23,2023,,,17,,,,Bobolink,At least one young fledged,6/16/23,5/24/23,5/26/23,6/7/23,6/17/23,6/27/23,5,5,5,1,1,,
+P13 N1 23,2023,,,13,,,,Bobolink,At least one young fledged,6/12/23,5/19/23,5/21/23,6/2/23,6/12/23,6/22/23,1,1,1,1,1,,
+P15 N3 23,2023,,,15,,,,Bobolink,At least one young fledged,6/15/23,,,,6/15/23,6/25/23,1,1,1,1,1,,
+P16 N2 23,2023,,,16,,,,Bobolink,At least one young fledged,6/14/23,5/26/23,5/28/23,6/9/23,6/19/23,6/29/23,4,4,2,1,0.5,,
+P15 N1 23,2023,,,15,,,,Bobolink,At least one young fledged,5/30/23,5/22/23,5/24/23,6/5/23,6/15/23,6/25/23,6,5,5,0.833333333,1,,
+P2 N1 23,2023,,,2,,,,Bobolink,At least one young fledged,6/14/23,5/31/23,6/2/23,6/14/23,6/14/23,6/24/23,6,6,6,1,1,,
+P14 N1 23,2023,,,14,,,,Bobolink,At least one young fledged,6/7/23,5/18/23,5/20/23,6/1/23,6/10/23,6/20/23,5,3,3,0.6,1,,
+P11 N1 23,2023,,,11,,,,Bobolink,At least one young fledged,6/14/23,,,6/10/23,,,4,4,4,1,1,,
+P15 N2 23,2023,,,15,,,,Bobolink,At least one young fledged,6/15/23,5/28/23,5/30/23,6/11/23,6/21/23,,5,5,5,1,1,,
+P16 N1 23,2023,,,16,,,,Bobolink,At least one young fledged,5/30/23,5/30/23,6/1/23,6/13/23,6/23/23,,4,2,2,0.5,1,,
+P11 N2 23,2023,,,11,,,,Bobolink,,6/14/23,5/29/23,5/31/23,6/12/23,6/22/23,,,,,,,,
+briar probable,2024,42.64882,-70.85456,,briar,no,no,Bobolink,Unknown,,,,,,,,,,,,,"on top of hill, lots of red clover, MF chipping "
+Briar Probable 2,2024,42.6492,-70.85573,,briar,no,no,Bobolink,Unknown,,,,,,,,,,,,,"1 female and 2 male, feeding behavior on Wednesday, June 19, 2024, in Briar hayfield refuge, found after mowing before baling."
+P10 N1 24,2024,42.64671,-70.85881,10,,,,Savannah_Sparrow,Young missing early,5/30/24,,,6/3/24,,,4,4,u,1,,,Savannah sparrow near rocky outcrop. hidden in clover patch next to hawthorn bush
+P10 N2 24,2024,42.64686,-70.85847,10,,,,Bobolink,At least one young fledged,,,,6/11/24,,,5,4,4,0.8,1,,Gillian- located on eastern facing slope between 2 rose bushes on patch of clover. Found through observation
+P10 N3 24,2024,42.64722,-70.85853,10,,,,Bobolink,At least one young fledged,,,,6/15/24,6/23/24,,4,4,4,1,1,,Gillian- found by hearing the babies while walking by. in patch of clover and Tim grass 
+P11 N1 24,2024,42.64652,-70.8595,11,,,,Bobolink,At least one young fledged,,,,6/11/24,,,5,4,4,0.8,1,,Gillian- found by observation. On a slight slope facing west. in thistle/ plantain 
+P12 N1 24,2024,42.64546,-70.8598,12,,,,Bobolink,At least one young fledged,,,,6/21/24,,,4,4,4,1,1,,Gillian- found by observing male with food. in patch of clover near large bolder in plot 12
+P12 N2 24,2024,42.6459,-70.86058,12,,,,Bobolink,At least one young fledged,,,,6/21/24,,,4,4,4,1,1,,Gillian- found by watching female with food 
+P13 N1 24,2024,42.64561,-70.86048,13,,,,Savannah_Sparrow,At least one young fledged,,,,6/6/24,6/16/24,,4,4,4,1,1,,Gillian- bottom of slope in plot 13
+P13 N2 24,2024,42.64581,-70.86074,13,,,,Bobolink,At least one young fledged,,,,6/3/24,6/14/24,,3,3,3,1,1,,Gillian- slope of plot 13 underneath crab apple between sticks
+P13 N3 24,2024,42.64593,-70.86086,13,,,,Savannah_Sparrow,At least one young fledged,,,,6/3/24,,,3,3,3,1,1,,"Tom- sav sp, slope of plot 13  well hidden"
+P15 N1 24,2024,42.64734,-70.85898,15,,,,Bobolink,At least one young fledged,,,,6/6/24,6/16/24,,6,6,6,1,1,,Alejandro in sweet vernal grass
+P15 N2 24,2024,42.64749,-70.8596,15,,,,Bobolink,At least one young fledged,,,,6/5/24,6/16/24,,6,6,6,1,1,,"by birdsfoot trefoil, found by Jane observing female warning chipping call and feeding behavior of both male and female"
+p15 probable ,2024,42.65434,-70.83301,15,,,no,Bobolink,Unknown,,,,,,,,,,,,,
+P16 N1 24,2024,42.64749,-70.86153,16,,,,Bobolink,At least one young fledged,,,,6/20/24,6/30/24,,5,3,3,0.6,1,,"on lower east side of hillside, near a large rise bush and some bedstraw, nest is tucked under the southeast side of a smallish crabapple tree"
+P16 N2 24,2024,42.64759,-70.86192,16,,,,Bobolink,At least one young fledged,,,6/22/24,7/1/24,7/10/24,,4,4,4,1,1,,At base of goldenrod next to the little Hawthorne shrub
+P19 N1 24,2024,42.64711,-70.86242,19,,,,Bobolink,Unknown,,,,,,,,,,,,,nest area is between the red post and the rush to the East of the post
+P21 N1 24,2024,42.64804,-70.86431,21,,,,Bobolink,Never laid eggs,6/4/24,,,,,,0,0,0,0,0,,Gillian- near gate between gp7 and 6. flushed female bobolink 
+P21 Probable,2024,42.63387,-70.83617,21,,,no,Bobolink,Unknown,,,,,,,,,,,,,"Jane. near post and 3 foot tall rose bush. MF actively guarding, chipping, 
+"
+P21 Probable 2,2024,42.64906,-70.86455,21,,,no,Bobolink,Unknown,,,,,,,,,,,,,"along top of hill from near west fence/gate area  to almost center of the plot in tall grass, recheck on an area where male activity was concentrated during early breeding season 
+"
+P3 probable,2024,42.64424,-70.85834,3,,,no,Bobolink,Unknown,,,,,,,,,,,,,on the border of plot 3 and plot 4 about 1/4 to 1/3 down from the fence at the hilltop
+P6 N1 24,2024,42.64574,-70.85839,6,,,,Bobolink,At least one young fledged,,,,6/7/24,6/15/24,,6,5,5,0.83,1,,"Gillian- found by observation 
+in tall clover patch "
+P7 N1 24,2024,42.64609,-70.85789,7,,,,Bobolink,At least one young fledged,,,,6/10/24,6/20/24,,5,5,4,1,0.8,,found by observation. Alejandro and Ellie. near dandelions in a patch of taller grass on slope
+P8 N1 24,2024,42.64654,-70.85772,8,,,,Bobolink,At least one young fledged,,,,6/10/24,6/20/24,,5,3,3,0.6,1,,Kate- flush from Gillian & Kate 2 weeksish ago. Observation Jane and Kate 6.12
+plains N1 24,2024,42.65107,-70.85885,,plains,no,,Bobolink,Unknown,,,6/7/24,,,,4,0,0,0,0,,
+Playground N1 24,2024,42.65216,-70.86285,,playground,no,,Bobolink,At least one young fledged,,,,6/17/24,6/25/24,,4,4,4,1,1,,"found by Jane with Tom’s observation,
+valley near pond in clover"
+Briar N1 25,2025,42.64928,-70.85613,,briar,no,,Bobolink,At least one young fledged,6/10/25,,,6/4/25,,,5,5,5,,,,
+Briar N2 25,2025,42.64919,-70.8557,,briar,no,,Bobolink,At least one young fledged,6/10/25,,,6/17/25,,,5,3,3,,,,"Jane flushed female on a rainy afternoon after Leah had marked where she had flushed about a half hour prior, hilltop area in clover/ diverse forbs and grass avg height 10 inches"
+GP1A Probable1 25,2025,42.2,-70,,gp1a,no,no,Bobolink,Unknown,,,,,,,,,,,,,"Well formed- under approximately 6"" vetch and various taller forage"
+P1 N2 25,2025,42.64655,-70.85706,1,,,,Bobolink,At least one young fledged,6/23/25,,,6/17/25,,,4,3,3,,,,"Jane, flushed female, but also observing males in area, red clover, sweet vernal"
+P10 N1 25,2025,42.64697,-70.85877,10,,,,Savannah_Sparrow,Young missing early,,,,6/4/25,,,4,4,u,,,,grazed flowering vernal grass and clover 3”/12”
+P11 N1 25,2025,42.64642,-70.85946,11,,,,Bobolink,At least one young fledged,,,,6/9/25,,,5,4,4,,,,"Leah, female flushed, clover, crab apple bush, sweet vernal, orchard"
+P11 N2 25,2025,42.64603,-70.85969,11,,,,Bobolink,At least one young fledged,6/11/25,,,6/2/25,,,5,5,5,,,,"Leah, watched female go back and forth, sweet verbal grass, "
+P12 N2 25,2025,42.64546,-70.86026,12,,,,Bobolink,At least one young fledged,,,,6/6/25,,,6,5,5,,,,"Angie watched from a distance until female flew into grass. as I walked over, I saw the female bounce away from her nest and hide behind a bush. some vetch in the surrounding area, and some grass. near a few small bushes"
+P12 N3 25,2025,42.6462,-70.86034,12,,,,Bobolink,At least one young fledged,6/17/25,,,6/13/25,,,4,3,3,,,,"Jane watching from the hillside,  observed a female descend and not come up for minutes while a male was keeping watch from the nearby rose bush. then walked over and flushed the female 
+clover and 2 foot high grass with medium large rose bushes nearby"
+P12 N4 25,2025,42.64588,-70.86043,12,,,,Bobolink,Abandoned,6/19/25,,,,,,5,0,0,,,,Leah and Jane flushed female while walking through …red clover and brome grass 18-24 inches tall
+P13 N1 25,2025,42.64561,-70.86082,13,,,,Bobolink,At least one young fledged,5/27/25,,,6/9/25,,,5,5,4,,,,4” tall flowering vernal grass 12” flowers. 5’ from apple
+P13 N2 25,2025,42.64532,-70.86046,13,,,,Bobolink,At least one young fledged,6/5/25,,,6/3/25,,,4,4,4,,,,"Jane flushed the female who skittered across the ground. looked under nearest little shrub to find nest. located under a small rose bush, downhill side. bush is midway between two ricks (see photo)"
+P15 N1 25,2025,42.64759,-70.85852,15,,,,Bobolink,At least one young fledged,,,,6/5/25,,,4,3,1,,,,"in a patch of red clover
+right next to the fence line
+Angie flushed while we were a few feet away"
+P16 N1 25,2025,42.64783,-70.86167,16,,,,Savannah_Sparrow,Abandoned,6/3/25,,,,,,4,0,0,,,,found while spraying molasses ahead of the cows (2nd paddock within plot 16) seems to be shielded by thorny rose debris and close to a young rose and some golden rod
+P16 Probable1 25,2025,42.6475,-70.86199,16,,,no,Bobolink,Unknown,,,,,,,,,,,,,"found by observing repeated feeding by 1F with 2M adults and the female guarding intensely, fledgeling on the ground"
+P2 N1 25,2025,42.64562,-70.85735,2,,,,Bobolink,At least one young fledged,,,,6/9/25,,,5,4,4,,,,"Angie
+flush
+surrounded by red clover, goat beard, verbal grass
+grass is 1 ft high
+"
+P21 N1 25,2025,42.6489,-70.86381,21,,,,Bobolink,At least one young fledged,,,,6/5/25,,,4,4,4,,,,
+P21 N2 25,2025,42.64892,-70.86441,21,,,,Bobolink,At least one young fledged,,,,6/9/25,,,6,4,4,,,,
+P6 Probable1,2025,42.64572,-70.85848,6,,,no,Bobolink,Unknown,,,,,,,,,,,,,"Fledgeling found crawling in the grass 
+Male adult was checking on it (and maybe feeding) from a nearby bush "
+P7 N1 25,2025,42.64643,-70.85796,7,,,,Savannah_Sparrow,At least one young fledged,,,,6/5/25,,,4,4,4,,,,"Leah
+Flushed
+50 cm apple tree
+sweet vernal grass
+clover"
+P8 N1 25,2025,42.64708,-70.85721,8,,,,Bobolink,At least one young fledged,,,,6/9/25,,,5,4,4,,,,flushed female
+P8 N2 25,2025,42.64677,-70.85813,8,,,,Bobolink,At least one young fledged,,,,6/2/25,,,4,4,1,,,,brand new hatch of four. observation of adults. 
+P8 N3 25,2025,42.64634,-70.85721,8,,,,Bobolink,At least one young fledged,6/12/25,,,6/8/25,,,4,4,4,,,,"Leah, watched male/female go back and forth multiple times, sweet verbal grass, red clover"
+probable,2025,42.65039,-70.86621,,,,no,Bobolink,Unknown,,,,,,,,,,,,,
+probable2,2025,42.6495,-70.86852,,,,no,Bobolink,Unknown,,,,,,,,,,,,,
+probable3,2025,42.64781,-70.86959,,,,no,Bobolink,Unknown,,,,,,,,,,,,,

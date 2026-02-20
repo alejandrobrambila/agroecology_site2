@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alejandro Brambila">
+<meta name="dcterms.date" content="2026-02-20">
 
-<title>Agroecology Updates – agroecology_site</title>
+<title>Bobolink Grazing Study – agroecology_site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">agroecology_site</span>
     </a>
   </div>
@@ -149,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,117 +114,174 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Agroecology Updates</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Bobolink Grazing Study</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">news</div>
+                <div class="quarto-category">projects</div>
+                <div class="quarto-category">data</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alejandro Brambila </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 20, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="projects">projects <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-<p>Updates from the Trustees Agroecology Team</p>
+<p>This study, carried out in Appleton Farms’ 100+ acre Great Pasture in Ipswich, MA, was designed to explore options for grazing management that help alleviate a common production/conservation trade-off.</p>
+<p>Bobolinks are a key indicator species for grassland habitat value. They are a grassland nesting bird, a guild which initially benefited from agricultural clearing in the 1800s, but has since been in steep decline due to habitat loss, species invasions, changing climate, and agricultural intensification. Bobolinks nest in grasslands from late May through early July, making them sensitive to disturbance precisely during the optimal harvest window for most common forage species.</p>
+<p>(Image of bobolink)</p>
+<p>The most common bobolink conservation practice is delaying harvest until sometime between July 15th, when most birds are done nesting and August 15th, when they migrate south. By this point forage quality and economic value has declined substantially, placing a heavy burden on grass farmers. This burden is increased in the case of graziers, where livestock must graze elsewhere for much of the season.</p>
+<p>Our study examined the impact of grazing prior to peak nesting activity on both nesting success and quality of summer forage. Our premise was based on research by Dr.&nbsp;Noah Perlut, who found that harvesting through early June, followed by an extended rest period, allowed bobolinks to successfully re-nest in fields. *Assuming grazing during nesting terminates nests present, focus on what happens after.* In addition to timing of early season harvest, we also considered the relative influence of forage height, tree and wetland distribution within the study area.</p>
+<p>Our primary treatment, harvest timing, was implemented by dividing Appleton’s Great Pasture into twenty roughly two-acre plots. Plot locations were selected to maximize the chance of nesting activity based on general background knowledge about where bobolinks tend to nest in fields (away from wooded edges and trees, outside of wetlands) and specific experience with territorial activity in the Great Pasture.</p>
+<p><img src="base GP.jpg" class="img-fluid"></p>
+<p><img src="plot_locations.jpg" class="img-fluid"></p>
+<p>Each year from 2023 through 2025, a herd of ~25 cows with their calves was rotated through the pasture according to prescriptions for each plot: pre-arrival (prior to May 15th), pre-nesting (May 15th-23rd), early-nesting (May 24th - June 9th), or post-nesting (after July 15th). Prescriptions were evenly distributed, and varied from year to year.</p>
+<p>(Image of GP with prescriptions).</p>
+<p>Nests were found by walking near them and flushing females, or observation of females returning to nests. Across three years, we found 47 bobolink nests. Once nests were found, they were visited every three days to assess timing and success rate of each nest by recording the number and status of eggs and young.</p>
+<p>(pictures of nests) 1 x 3</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="found_nests.jpg" class="img-fluid figure-img"></p>
+<figcaption>All nests found in plots with poorly drained soils (blue) and tree cover (green) highlighted.</figcaption>
+</figure>
+</div>
+<p>As can be seen in the map. Nests were unevenly distributed across plots. Distribution across the years. Any plots not included did not have nests found in them.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When did nesting periods start and end? Determined hatch date of each nest, and used known lifecycle to estimate nest initiation and fledgling mobile dates.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These plots show that the timing of our nests fits within the typical nesting period: May 15 - July 15 and that harvesting during this period would have interrupted only the latest nests in 2024.</p>
+<p>How many nests by treatment?</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Most nests were in fallow plots, followed closely by plots grazed prior to bobolinks arrival on May 15th. Nearly all nests found were ultimately successful in fledging young. Some successful nests were found in plots that were grazed between May 16th and July 15th, although far fewer than outside this period.</p>
+<p>While this technically supports the premise that grazing during nest initiation can allow for successful nesting, practically it led to greatly reduced nesting activity. One potential interpretation of these results is that as territory establishment and nest initiation was interrupted in grazed plots, the bobolinks simply moved to nearby undisturbed plots and did not have any need to return and re-nest in the impacted plots. A larger-scale disturbance that did not allow for in-field migration may have resulted in higher re-nesting in impacted areas. Further research into the spatial and temporal dynamics of in-field refuges remains an interesting direction.</p>
+<p>This interpretation is supported by data showing the relationship between graze date and nest initiation date.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The four nests found in the pre-nesting graze treatment were in fields that were disturbed at the very beginning of this period (May 16th). The nest found in the early-nesting period was the only nest initiated prior to grazing, meaning it survived the grazing event rather than was re-established during the post-grazing period. Finally, the two successful nests in plots that were grazed during the peak nesting period were subjected to grazing only after they had fledged young, in early July, so they can more realistically be considered fallow plots. This data also suggests that</p>
+<p>On average, nests fledged about four young. We interpreted young as having fledged if they were consistently observed upon repeat visits to the nest, up to the age (~10 days) where they would be expected to fledge naturally. There is some chance that young were predated after the last visit where they were seen alive, whether in the nest or after they fledged, but it was beyond our ability to gather that data. While there were only minor differences between nests in plots grazed outside of the active nesting period, the few others fledged only one or two young.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Nests in fallow plots were built on average 3-4 days before nests in plots grazed earlier in the season. Suggests they may have been waiting for grass to regrow.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Next looked at if amount of grass was the mechanism in treatment timing. If thats the case you could use a lower intensity impact early in the season to maintain cover as the time left for regrowth declines.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-9-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>While there were patterns in the amount of grass present when nests were started, this was not easily explained by either grass height at the average build date (May 26th)…</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>…or hatch date (Jun 10th):</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Fields with most nests had typical cover, not skewed higher than average as one may predict. In fact it looked even tighter than the full distribution. Maybe the lowest end got cut off. But they did not skew to the highest, some moderate impact early on may be beneficial if grass can recover to ‘normal’ levels. May be especially the case where grass/thatch is very dense or tall.</p>
+<p>Grass recovers quickly during this time period, especially under careful rotational grazing. Points towards the disturbance of cattle moving through once birds are present, not worry about moving through ‘extra lightly’, especially before the birds arrive. Note: heavy, close mowing may be a different story.</p>
+<p>That’s it for the impact of grazing treatment as measured categorically in time periods and continuously by grazing date (nothing there) and as manifest through grass height.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,projects,data" data-listing-date-sort="1771563600000" data-listing-file-modified-sort="1771622244402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1879">
-<div class="thumbnail">
-<p><a href="./posts/grazing_study/index.html" class="no-external"></a></p><a href="./posts/grazing_study/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/grazing_study/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/grazing_study/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/grazing_study/index.html" class="no-external">Bobolink Grazing Study</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/grazing_study/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('projects'); return false;">
-projects
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('data'); return false;">
-data
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/grazing_study/index.html" class="no-external">This study, carried out in Appleton Farms’ 100+ acre Great Pasture in Ipswich, MA, was designed to explore options for grazing management that help alleviate a common…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/grazing_study/index.html" class="no-external">
-<div class="listing-date">
-Feb 20, 2026
-</div>
-<div class="listing-author">
-Alejandro Brambila
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1771218000000" data-listing-file-modified-sort="1771539276251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Feb 16, 2026
-</div>
-<div class="listing-author">
-Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

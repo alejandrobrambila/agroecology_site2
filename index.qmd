@@ -1,5 +1,5 @@
 ---
-title: "agroecology_site"
+title: "Agroecology Updates"
 listing:
   contents: posts
   sort: "date desc"
@@ -11,4 +11,4 @@ page-layout: full
 title-block-banner: true
 ---
 
-
+Updates from the Trustees Agroecology Team
