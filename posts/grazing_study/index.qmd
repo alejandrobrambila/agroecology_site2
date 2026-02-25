@@ -4,7 +4,6 @@ author: "Alejandro Brambila"
 date: "2026-02-20"
 html:
   fig-width: "100%"
-output-dir: docs
 categories: [news, projects, data]
 image: "image.jpg"
 ---
