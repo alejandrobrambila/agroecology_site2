@@ -4,6 +4,7 @@ author: "Alejandro Brambila"
 date: "2026-02-20"
 html:
   fig-width: "100%"
+output-dir: docs
 categories: [news, projects, data]
 image: "image.jpg"
 ---
@@ -251,3 +252,5 @@ Fields with most nests had typical cover, not skewed higher than average as one 
 Grass recovers quickly during this time period, especially under careful rotational grazing. Points towards the disturbance of cattle moving through once birds are present, not worry about moving through 'extra lightly', especially before the birds arrive. Note: heavy, close mowing may be a different story.
 
 That's it for the impact of grazing treatment as measured categorically in time periods and continuously by grazing date (nothing there) and as manifest through grass height. Next up.. incorporating spatial impacts, integrated modeling, and forage quality.
+
+pw: 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
