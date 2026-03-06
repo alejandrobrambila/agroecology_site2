@@ -102,7 +102,7 @@ p1+p2+plot_annotation(caption="Vertical lines drawn at May 15th and July 15th re
 
 Across years, the timing nests found in our study aligned with the typically understood nesting period of May 15 through July 15. Over the course of our study, harvesting outside of this period would have interrupted only the latest nests in 2024.
 
----
+------------------------------------------------------------------------
 
 ### Grazing Treatment x Nest Locations
 
@@ -139,7 +139,7 @@ ggplot(allnests, aes(cows_out_nodate, build_date_noyear,  color=trt_actual)) +
 
 Pre-arrival and post-nesting treatments can be thought of as indirect treatments, as bobolinks and cattle did not interact during the nesting period in these plots. The four nests found in the pre-nesting treatment (yellow) were in fields that were disturbed at the very beginning of this period (May 16th). The two successful nests in plots that were grazed during the peak nesting period were subjected to grazing only after they had fledged young, in early July, so they can essentially be considered fallow plots. The nest found in the early-nesting period (green) was the only nest initiated prior to grazing, meaning it survived the grazing event rather than was re-established during the post-grazing period.
 
----
+------------------------------------------------------------------------
 
 ### Differences in Nest Characteristics
 
@@ -257,7 +257,7 @@ ggplot(avg_build, aes(fct_reorder(interaction(plot, year), sum, .desc=T),sum))+g
 
 In general, the distribution of cover across nests, and plots during nest initiation looked similar. Fields with most nests had typical cover, not skewed higher than average as one may predict. This suggests that some moderate impact early in the season may be beneficial (or at least not detrimental) if grass can recover to 'normal' levels. This may be even more the case the case where vegetation/thatch is very dense or tall.
 
----
+------------------------------------------------------------------------
 
 This first round of analysis supports the management practice of harvest during the pre-arrival period, but suggest detrimental impacts of harvest once bobolinks have arrived, even prior to nest initiation. Based on these results we suggest minimizing the disturbance of cattle moving through once birds are present, but not being overly focused on intensity of impact, especially before the birds arrive. (Note: heavy, close mowing may be a different story.) We are fortunate that grass recovers quickly during this time period, especially under careful rotational grazing.
 

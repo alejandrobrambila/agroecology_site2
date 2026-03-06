@@ -1,0 +1,94 @@
+---
+title: "2025-2026 Appleton Grasslands Wrapup"
+lightbox: auto
+author: "Alejandro Brambila"
+date: "2026-03-6"
+date-modified: last-modified
+categories: [news, projects, data]
+format:
+  html:
+    css: styles.css
+image: "cows.jpg"
+---
+
+```{=html}
+<style>
+  .hidden-gallery-img {
+    display: none;
+  }
+</style>
+```
+
+### The 2025 Grazing Season
+
+From April through December, 2025 83 cattle (including 12 removed and 23 new calves) grazed across Appleton Farms' grasslands including both Ecological Landscape Units and production fields. Since 1999, Appleton's livestock operation has been central to our strategy for maintaining ecological value across over 400 acres of grasslands. For this to work, we support the productive capacity of our fields to feed our livestock through careful stewardship of soil and forage resources. Over the years, we have used different approaches to achieve these goals. Most recently, for two years now, our farm team has come together to create a 'grazing plan' that takes into account sustainable grass farming practices while providing suitable habitat for the native species that call our farm home. The central tool of this process is a grazing chart, and we made a big one!
+
+![2025 Grazing chart through september](25gc.jpg)
+
+As our first 'planned' season comes to a close and our second begins, we hope to share some highlights of what Appleton staff were able to achieve over the last year, and what we hope to achieve in the coming year. In 2025...
+
+-   259 acres were grazed at least once. This represents \~4 acres per animal, within the typical range for 100% grass fed. Click through the following maps to see how our herds moved through fields through the seasons. Each of these moves was planned according to rotational grazing principles of appropriate paddock size, utilization, grazing period and rest period given animal demand and forage availability.
+
+![Brood Cycle 1](bc1.jpg){.lightbox group="25-flow"} ![Brood Cycle 2](bc2.jpg){.lightbox .hidden-gallery-img group="25-flow"} ![Brood Cycle 3](bc3.jpg){.lightbox .hidden-gallery-img group="25-flow"} ![Brood Cycle 4](bc4.jpg){.lightbox .hidden-gallery-img group="25-flow"} ![Feeder Cycle 1](fc1.jpg){.lightbox .hidden-gallery-img group="25-flow"} ![Feeder Cycle 2](fc2.jpg){.lightbox .hidden-gallery-img group="25-flow"} ![Feeder Cycle 3](fc3.jpg){.lightbox .hidden-gallery-img group="25-flow"} ![Feeder Cycle 4](fc4.jpg){.lightbox .hidden-gallery-img group="25-flow"}
+
+-   112 acres were also hayed at least once producing 307 round bales (115 tons) of hay, bringing the total land base per head to 4.3.
+
+-   Placeholder for seeding and amendments.
+
+-   As seen in the following map, about 140 acres were managed as grassland bird nesting habitat. This means that they were not grazed, hayed or mown from mid-May through mid-July. In addition to their value as an indicator of grassland habitat quality, grassland birds are in steep decline both nationally and regionally as habitat loss, invasive species, climate change, and agricultural intensification threaten populations. Both in the context of Trustees and Massachusetts grasslands, Appleton ranks highly in terms of grassland bird habitat.
+
+    ![](bird25.jpg)
+
+-   For more information about the status of grassland birds at Trustees properties, including at Appleton, see [this report](https://storymaps.arcgis.com/stories/50222979c2454e58b5a8db162a33f652).
+
+-   We helped manage diverse wet meadows, rare plant species, and insect habitat through carefully timed grazing and mowing that set back community succession while still allowing target species to complete their reproductive cycles.
+
+-   In collaboration with our stewardship team, we impacted over 100 acres of multiflora rose and other woodies in the Great Pasture. Our treatment methods included mechanical clearing with diverse equipment (brush hog, DR mower, brush cutter), manual clipping, spot spraying, and mob grazing after spraying roses with molasses to encourage browsing.
+
+{{< video DR.MOV title=>}} Clearing roses with the DR Mower.
+
+![Grazing among the roses](cows.jpg){.lightbox group="roses"} ![Sprayed roses](sprayed_roses.jpeg){.lightbox .hidden-gallery-img group="roses"} ![Regrowing roses](regrowth_roses.jpeg){.lightbox .hidden-gallery-img group="roses"}
+
+Multiflora rose gallery.
+
+### Looking Forward to Spring
+
+In just over a month, our cows will be back out on the landscape. This year, we're expecting a slightly larger herd size of 94 total head. Of these, 24 will go to harvest, helping us reach a stable herd size over the coming years. Once again, we are hard at work creating a plan that balances and synergizes production and ecological goals. Our new grazing chart is well on the way:
+
+(GRZ Chart image: TBD)
+
+With the experience of 2025 to build on we have been able to move more efficiently through our planning process, as animal demands, available acreage, and general harvest patterns remain similar. This consistency can be seen in our new set of flow maps, now with the addition of grey 'exclusion' areas for ecological or other reasons:
+
+![Brood Cycle 1](26bc1.jpg){.lightbox group="26-flow"} ![Brood Cycle 2](26bc2.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 1](26fc1.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 2](26fc2.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 3](26fc3.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 4](26fc4.jpg){.lightbox .hidden-gallery-img group="26-flow"}
+
+Like our flow maps, we have made tweaks in other areas, including rating fields based on their past forage production, digitizing our grazing chart on a shared app (Maia Grazing), updating monitoring and recordkeeping methods, planning for a broad suite of field amendments (lime, macronutrients, minerals, organic matter), and seeding to improve forage composition.
+
+We have also used data from recent years better understand how native species are distributed across our fields. In addition to rare species and grassland bird nesting areas, which have been refined through our grazing study and volunteer efforts described above, we are expanding our planning efforts to incorporate more diverse indicators of ecological value.
+
+Specifically, in 2026 we are focusing on butterflies as an indicator for grassland invertebrate habitat quality. As the foundation of animal food webs, insects play an incredibly important role in ecological communities. Like grassland birds, butterflies are charismatic, relatively easy to identify, and in decline. Their presence depends on long-term provision of mixed resources including host plants, nectar sources, and overwintering habitat.
+
+There are several butterfly hotspots across Appleton Farms, which we have organized by level of plant diversity, composition (the presence of key host plants), and how these areas have typically related to the livestock operation (an important driver of plant diversity and composition). Our working descriptions of these areas fall into three categories, with relevant management guidelines:
+
+-   Diverse wet meadows outside of production fields. These fields have high wildflower diversity, often including host plants for rare butterflies. They need disturbance to remain grasslands, but not every year and ideally during the dormant season. We do not plan for production activity in these fields, but occasionally they may be grazed during extreme drought during the fall.
+
+-   Diverse wet meadows within production fields. These fields also have high wildflower diversity, but with a distinct composition due to the fact that they have been typically grazed at least once per year. We plan to continue grazing these fields in-season, but with a keen eye towards not overgrazing, allowing extended rest periods, and waiting until after June, a critical management window for butterflies.
+
+-   Sedge meadows. These fields, also typically within production areas, do not necessarily have high wildflower diversity. Instead, they have a large component of sedges, an important host plant for several species of butterflies. These fields are typically grazed more frequently than the others, and since sedges are less palatable, they tend to proliferate. While we will continue to graze these fields in season, we plan to exclude livestock from sedge meadows through June. With exception for extreme woody/invasive pressure, we will not mow any of our pollinator hotspots during the growing season.
+
+![Ecological restrictions applied in the 2026 grazing plan](ecoplan.jpg)
+
+Finally, we are continuing to develop our approach to managing woody invasives in our pastures, with the Great Pasture as our primary concern and laboratory. Both grassland habitat value and forage production depend on effective control of shrubs like multiflora rose. While spot spraying with herbicides can be effective, and is a indispensible tool across Trustees grasslands, the presence of livestock at Appleton provides an opportunity and incentive to explore alternatives.
+
+In 2025 we learned a lot about the efficiency and effectiveness of different types of equipment for mechanical control across variable field conditions as we did our best to set back woodies across the vast majority of the 100+ acre pasture. We have identified constraints (crowded field edges and below fallen trees), and other challenging areas (too steep, rocky, or wooded) where support from our stewardship team and habitat specialists are needed. Elsewhere, we have laid out an ambitious plan to mow any woody vegetation within 1-2 days following each grazing cycle. Because these efforts are complicated by our other ecology goals, we put together a map to help coordinate this work.
+
+<!-- Add script to the <head> of your page to load the embeddable map component -->
+
+```{=html}
+<script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+```
+
+<!-- Add custom element to <body> of your page -->
+
+<arcgis-embedded-map style="height:600px;width:700px;" item-id="f9b2923cbc7f4bd3af13fefdfd10000e" theme="light" legend-enabled time-zone-label-enabled center="-70.86088355601142,42.64663754107511"scale="9027.977411" portal-url="https://ttor.maps.arcgis.com"></arcgis-embedded-map>
+
+We look forward to sharing the results of our 2026 grazing and grassland ecology management along with any evolution in our process next winter!
