@@ -5,7 +5,7 @@ date: "2026-02-25"
 date-modified: last-modified
 html:
   fig-width: "100%"
-categories: [news, projects, data]
+categories: [news, management]
 image: "bigbob.jpg"
 ---
 
