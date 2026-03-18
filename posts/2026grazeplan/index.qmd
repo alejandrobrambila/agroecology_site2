@@ -33,7 +33,7 @@ As our first 'planned' season comes to a close and our second begins, we hope to
 
 -   112 acres were also hayed at least once producing 307 round bales (115 tons) of hay, bringing the total land base per head to 4.3.
 
--   Placeholder for seeding and amendments.
+-   Soil amendments and seeds were applied to several fields to improve forage quality and production: 17 acres across five fielld were frost seeded with legumes to increase nitrogen fixation. 40-50 acres acrosss five different fields were fertilized with composted chicken manure. A 22 acre field was drill seeded with a cool season pasture mix. Seven fields were limed to increase pH, making soil nutrients more available.
 
 -   As seen in the following map, about 140 acres were managed as grassland bird nesting habitat. This means that they were not grazed, hayed or mown from mid-May through mid-July. In addition to their value as an indicator of grassland habitat quality, grassland birds are in steep decline both nationally and regionally as habitat loss, invasive species, climate change, and agricultural intensification threaten populations. Both in the context of Trustees and Massachusetts grasslands, Appleton ranks highly in terms of grassland bird habitat.
 
@@ -47,7 +47,7 @@ As our first 'planned' season comes to a close and our second begins, we hope to
 
 {{< video DR.MOV title=>}} Clearing roses with the DR Mower.
 
-![Grazing among the roses](cows.jpg){.lightbox group="roses"} ![Sprayed roses](sprayed_roses.jpeg){.lightbox .hidden-gallery-img group="roses"} ![Regrowing roses](regrowth_roses.jpeg){.lightbox .hidden-gallery-img group="roses"}
+![Grazing among the roses](cows.jpg){.lightbox group="roses"} ![Impact of herbicide treatment on multiflora rose](sprayed_roses.jpeg){.lightbox .hidden-gallery-img group="roses"} ![Rose regrowth following a rotary mow](regrowth_roses.jpeg){.lightbox .hidden-gallery-img group="roses"}
 
 Multiflora rose gallery.
 
@@ -55,11 +55,11 @@ Multiflora rose gallery.
 
 In just over a month, our cows will be back out on the landscape. This year, we're expecting a slightly larger herd size of 94 total head. Of these, 24 will go to harvest, helping us reach a stable herd size over the coming years. Once again, we are hard at work creating a plan that balances and synergizes production and ecological goals. Our new grazing chart is well on the way:
 
-(GRZ Chart image: TBD)
+![2026 Grazing chart in progress](26gc.jpg)
 
 With the experience of 2025 to build on we have been able to move more efficiently through our planning process, as animal demands, available acreage, and general harvest patterns remain similar. This consistency can be seen in our new set of flow maps, now with the addition of grey 'exclusion' areas for ecological or other reasons:
 
-![Brood Cycle 1](26bc1.jpg){.lightbox group="26-flow"} ![Brood Cycle 2](26bc2.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 1](26fc1.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 2](26fc2.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 3](26fc3.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 4](26fc4.jpg){.lightbox .hidden-gallery-img group="26-flow"}
+![Brood Cycle 1](26bc1.jpg){.lightbox group="26-flow"} ![Brood Cycle 2](26bc2.jpg){.lightbox .hidden-gallery-img group="26-flow"}![Brood Cycle 3](26bc3.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 1](26fc1.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 2](26fc2.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 3](26fc3.jpg){.lightbox .hidden-gallery-img group="26-flow"} ![Feeder Cycle 4](26fc4.jpg){.lightbox .hidden-gallery-img group="26-flow"}
 
 Like our flow maps, we have made tweaks in other areas, including rating fields based on their past forage production, digitizing our grazing chart on a shared app (Maia Grazing), updating monitoring and recordkeeping methods, planning for a broad suite of field amendments (lime, macronutrients, minerals, organic matter), and seeding to improve forage composition.
 
@@ -79,7 +79,7 @@ There are several butterfly hotspots across Appleton Farms, which we have organi
 
 Finally, we are continuing to develop our approach to managing woody invasives in our pastures, with the Great Pasture as our primary concern and laboratory. Both grassland habitat value and forage production depend on effective control of shrubs like multiflora rose. While spot spraying with herbicides can be effective, and is a indispensible tool across Trustees grasslands, the presence of livestock at Appleton provides an opportunity and incentive to explore alternatives.
 
-In 2025 we learned a lot about the efficiency and effectiveness of different types of equipment for mechanical control across variable field conditions as we did our best to set back woodies across the vast majority of the 100+ acre pasture. We have identified constraints (crowded field edges and below fallen trees), and other challenging areas (too steep, rocky, or wooded) where support from our stewardship team and habitat specialists are needed. Elsewhere, we have laid out an ambitious plan to mow any woody vegetation within 1-2 days following each grazing cycle. Because these efforts are complicated by our other ecology goals, we put together a map to help coordinate this work.
+In 2025 we learned a lot about the efficiency and effectiveness of different types of equipment for mechanical control across variable field conditions as we did our best to set back woodies across the vast majority of the 100+ acre pasture. We have identified constraints (crowded field edges and below fallen trees), and other challenging areas (too steep, rocky, or wooded) where support from our stewardship team and habitat specialists are needed. Elsewhere, we have laid out an ambitious plan to mow any woody vegetation within 1-2 days following each grazing cycle. Because these efforts are constrained by our other priorities, the following map was developed to help coordinate this work.
 
 <!-- Add script to the <head> of your page to load the embeddable map component -->
 
@@ -91,4 +91,4 @@ In 2025 we learned a lot about the efficiency and effectiveness of different typ
 
 <arcgis-embedded-map style="height:600px;width:700px;" item-id="f9b2923cbc7f4bd3af13fefdfd10000e" theme="light" legend-enabled time-zone-label-enabled center="-70.86088355601142,42.64663754107511"scale="9027.977411" portal-url="https://ttor.maps.arcgis.com"></arcgis-embedded-map>
 
-We look forward to sharing the results of our 2026 grazing and grassland ecology management along with any evolution in our process next winter!
+Thank you to all who made our planning season a success: Zoe MacKay, Alyssa Hajek-Jones, Andrew Lawson, JJ Desmond, Robert Oppenheimer, Julie Richburg, Jane Hammer, and Saskia Campbell.
