@@ -8,7 +8,10 @@ html:
 categories: [news, management]
 image: "bigbob.jpg"
 ---
-
+<!--
+This is a multi-line comment.
+It works well in most environments.
+-->
 ```{r, include=F}
 library(tidyverse)
 library(readr)
